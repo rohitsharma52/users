@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const Hotel = require('../model/hotel_model.js');
-const { findOneAndUpdate } = require('../model/user.js');
+const User = require('../model/user.js');
 router.post('/',async(req,res)=>{
 const hoteldata=req.body;
 try{ 
